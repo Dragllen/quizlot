@@ -1,5 +1,5 @@
 package kz.knewit.quiz;
 
-public class Main {
+public class DBService {
 
 }
