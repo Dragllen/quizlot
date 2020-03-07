@@ -11,5 +11,7 @@ public class Main {
         dbService.createUser(user);
 
         System.out.println("finish");
+        user.setLogin("bla bla");
+        dbService.updateUser(user);
     }
 }

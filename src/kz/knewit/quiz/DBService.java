@@ -21,10 +21,11 @@ public class DBService {
         try {
 
             PreparedStatement ps =
-                    con.prepareStatement("insert into user(login, name, password)  values(?,?,?)");
+                    con.prepareStatement("insert into users(login, name, password)  values(?,?,?)");
             ps.setString(1, user.getLogin());
             ps.setString(2, user.getName());
             ps.setString(3, user.getPassword());
+            ps.execute();
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -32,7 +33,28 @@ public class DBService {
 
     }
 
+    public void deleteUser(User user){
+        try{
+            statement.executeUpdate("delete from users where id = " +user.getId());
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 
+    public void updateUser(User user){
+        try {
 
+            PreparedStatement ps =
+                    con.prepareStatement("update users set login = " + '?' + ", name = " + '?'+ ", password = " + '?' + " where id = " + '?');
+            ps.setString(1, user.getLogin());
+            ps.setString(2, user.getName());
+            ps.setString(3, user.getPassword());
+            ps.setInt(4, user.getId());
+            ps.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
 
 }
