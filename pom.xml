@@ -15,9 +15,7 @@
         <version>1.18.8</version>
         <scope>provided</scope>
     </dependency>
-    </dependencies>
-    <dependencies>
-        <dependency>
+            <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.18</version>
