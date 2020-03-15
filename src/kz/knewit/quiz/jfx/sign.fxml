@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kz.knewit.quiz.Controller">
+   <children>
+      <Label layoutX="232.0" layoutY="70.0" prefHeight="72.0" prefWidth="136.0" text="Sign in">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="PasswordSignIn" layoutX="226.0" layoutY="221.0" promptText="Password" />
+      <TextField fx:id="LoginSignIn" layoutX="226.0" layoutY="154.0" promptText="Login" />
+      <Button fx:id="ButtonSignIn" layoutX="270.0" layoutY="311.0" mnemonicParsing="false" onAction="#ButtonSignInClick" text="Register" />
+      <TextField fx:id="NameSignIn" layoutX="226.0" layoutY="188.0" promptText="Name" />
+   </children>
+</AnchorPane>

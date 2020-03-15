@@ -57,4 +57,8 @@ public class DBService {
 
     }
 
+    //public void checkUser(User user){
+    // ....                             Надо чекать есть ли такой юзер
+    //}
+
 }
